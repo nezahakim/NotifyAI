@@ -1,10 +1,10 @@
-const searchService = require('../services/searchService');
-const weatherService = require('../services/weatherService');
-const { getNewsUpdate, SendNewsUpdates } = require('../services/newsService');
-const { tutorial, TutorialProcess } = require('../services/tutorialService');
+const searchService = require('../../services/searchService');
+const weatherService = require('../../services/weatherService');
+const { getNewsUpdate, SendNewsUpdates } = require('../../services/newsService');
+const { tutorial, TutorialProcess } = require('../../services/tutorialService');
 
-const middleWare =  require('../middleware/middleware')
-const ImagineCheck = require('../middleware/ImagineCheck')
+const middleWare =  require('../../middleware/middleware')
+const ImagineCheck = require('../../middleware/ImagineCheck')
 const imagineCommand =  require('./imagineCommand')
 const NodeCache = require('node-cache');
 
