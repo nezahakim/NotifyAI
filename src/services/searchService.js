@@ -1,5 +1,5 @@
 const axios = require("axios");
-const HfInference = require("@huggingface/inference");
+const {HfInference} = require("@huggingface/inference");
 const config = require("../AI/config");
 
 const hf = new HfInference(process.env.HF_TOKEN_1);
