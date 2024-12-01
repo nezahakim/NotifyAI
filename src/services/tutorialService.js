@@ -29,9 +29,9 @@ const tutorialSteps = [
     },
 ];
 
-export const userTutorialProgress = new Map();
+module.exports = userTutorialProgress = new Map();
 
-export const tutorial = (bot, msg) => {
+module.exports = tutorial = (bot, msg) => {
     try {
         const telegramId = msg.from.id.toString();
         userTutorialProgress.set(telegramId, 0);
@@ -41,7 +41,7 @@ export const tutorial = (bot, msg) => {
     }
 };
 
-export const TutorialProcess = async (bot, msg) => {
+module.exports = TutorialProcess = async (bot, msg) => {
     const telegramId = msg.from.id.toString();
     const progress = userTutorialProgress.get(telegramId);
 
